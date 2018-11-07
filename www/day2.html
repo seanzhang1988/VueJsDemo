@@ -232,7 +232,7 @@
             // console.log(this.msg) 输出undefined
             // 在beforeCreate生命周期函数执行时，data与methods均未初始化，不能访问
         },
-        created(){	   //第二个生命周期函数,最早访问methods与data的位置
+        created(){	   //第二个生命周期函数,methods与data初始化完毕
             console.log(this.msg)
         },
         beforeMount(){ //第三个生命周期函数，表示模板已经编译完成，但是尚未把模板渲染到页面中，不是变量内容

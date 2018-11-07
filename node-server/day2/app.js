@@ -29,3 +29,11 @@ server.listen(3000, function(){
     console.log('server listen at localhost:3000')
 })
 //启动服务器 nodemon app ,需要npm install -g nodemon 
+
+/*
+  启动node服务：
+  1.cmd进入node后输入npm install -g nodemon 
+  2.新建终端
+  3.进入app.js（拿本例来说）所在目录：F:\MyCode\GitRepository\VueJsDemo\node-server\day2
+  4.输入命令：nodemon app 即可开启服务
+  */

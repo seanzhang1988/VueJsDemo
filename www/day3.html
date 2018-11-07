@@ -133,7 +133,7 @@
                 })
             }
         },
-        created(){
+        created(){//data和methods已创建完毕 可以访问
             this.getAllList()
         }
     })
@@ -145,8 +145,7 @@
 <!-- 2.自定义两组样式，来控制transition内部的元素实现动画 -->
 <!-- 第二种动画方式：借助于第三方库animate.css实现动画，animate首页有动画样式演示 -->
 <!-- 第三种动画方式：借助于钩子函数实现（动画的生命周期函数） -->
-<div id="app2">
-    
+<div id="app2">    
     <button type="button" class="btn btn-default" @click='flag=!flag'>toggle</button>
     <transition name="fade">
         <h3 v-if ="flag">这是一个H3</h3>
